@@ -106,5 +106,20 @@ namespace UnitTestCalculator
             //-- Assert
             Assert.AreEqual(expected, actaul);
         }
+        [TestMethod]
+        public void TestMethodModulus()
+        {
+
+            //-- Arrange
+            double a = 5;
+            double b = 2;
+            double expected = 1;
+
+            //-- Act
+            var actaul = Program.Modulus(a, b);
+
+            //-- Assert
+            Assert.AreEqual(expected, actaul);
+        }
     }
 }

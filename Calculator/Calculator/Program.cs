@@ -48,6 +48,9 @@ namespace Calculator
                     case "^":
                         d = ToThePowerOf(a, c);
                         break;
+                    case "%":
+                        d = ToThePowerOf(a, c);
+                        break;
                     default:
                         break;
                 }
@@ -68,6 +71,9 @@ namespace Calculator
         public static double Multiples(double a, double c) => a * c;
         // To the power of two numbers
         public static double ToThePowerOf(double a, double c) => Math.Pow(a, c);
+        // Modulus
+        public static double Modulus(double a, double c) => a % c;
+
 
         // Ends the main While-loop if the user writes "end" at the end of a calculation
         public static bool CheckForEnd(string end)
